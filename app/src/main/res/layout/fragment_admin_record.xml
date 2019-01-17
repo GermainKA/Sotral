@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    android:background="@color/colorBackG1"
+    tools:context="myactivity.cp16.com.sotral_way.Views.Admin.AdminRecord">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:textSize="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="VEUILLEZ CONTACTEZ CP16 !" />
+
+
+
+</RelativeLayout>

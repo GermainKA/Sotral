@@ -1,0 +1,75 @@
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        tools:context="myactivity.cp16.com.sotral_way.Views.Autre.AnonymeRecord">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/input6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="Numéro De Téléphone"
+                        android:inputType="number"
+                        android:maxLines="1" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/input7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="Adresse"
+                        android:inputType="text"
+                        android:maxLines="1" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/idBntRegisterAnony"
+                    android:layout_width="333dp"
+                    android:layout_height="@dimen/n5_bnt_height"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="S'Enregistrer"
+                    android:background="@drawable/backgroud_bnt_register"
+                    android:textColor="#d413ad"
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Anonyme" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>

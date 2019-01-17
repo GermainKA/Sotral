@@ -1,0 +1,77 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="myactivity.cp16.com.sotral_way.Views.Admin.AdminAuthentification">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="141dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/admin"
+            android:textColor="#333333"
+            android:textSize="30sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/idLineNumbers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/num_ro_de_ligne"
+                android:inputType="number"
+                android:maxLines="1"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/idPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mot_de_passe"
+                android:inputType="textPassword"
+                android:maxLines="1"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/n5_bnt_height"
+            android:id="@+id/idBtnLoginAdm"
+            android:layout_gravity="center"
+            android:background="@drawable/backgroud_bnt_login"
+            android:clickable="true"
+            android:text="@string/str_se_connecter"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnRecordAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:src="@android:drawable/ic_input_add"
+        android:layout_gravity="right|bottom"/>
+
+</FrameLayout>

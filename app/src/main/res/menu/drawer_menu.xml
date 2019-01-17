@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view" >
+
+    <group android:checkableBehavior="single">
+        <item android:title="Connexion">
+            <menu>
+                <item
+                    android:id="@+id/nav_etudiants"
+                    android:title="@string/str_etudiants" />
+                <item
+                    android:id="@+id/nav_administration"
+                    android:title="@string/str_administration" />
+                <item
+                    android:id="@+id/nav_Autres"
+                    android:title="@string/str_autres" />
+
+            </menu>
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="Information">
+            <menu>
+                <item
+                    android:id="@+id/nav_info_horaires"
+                    android:title="@string/info_horaires" />
+                <item
+                    android:id="@+id/nav_info_payement"
+                    android:title="@string/info_payement" />
+                <item
+                    android:id="@+id/nav_info_locations"
+                    android:title="Info Locations" />
+
+            </menu>
+        </item>
+    </group>
+
+    <item android:title="Application">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Partager" />
+            <item
+                android:id="@+id/nav_about_sotral"
+                android:title="@string/str_a_propos_de_sotral" />
+            <item
+                android:id="@+id/nav_about_CP16"
+                android:title="@string/str_a_propos_de_cp16" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="Quit" />
+
+        </menu>
+    </item>
+
+</menu>

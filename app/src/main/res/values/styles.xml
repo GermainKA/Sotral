@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorBackG3</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorForeground">@color/foreground_material_light</item>
+    </style>
+
+    <style name="TextColor">
+        <item name="android:textColor">#ffff</item>
+        <item name="android:textColorPrimary">#fff700</item>
+        <item name="android:textColorSecondary">#ff1a00</item>
+        <item name="android:textColorTertiary">#ea00ff</item>
+        <item name="android:textColorPrimaryInverse">#00ff04</item>
+        <item name="android:textColorSecondaryInverse">#00FF00</item>
+        <item name="android:textColorTertiaryInverse">#00FF00</item>
+    </style>
+    <style name="InputColor1" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">@color/colorAccent4</item>
+        <item name="android:colorControlActivated">@color/colorAccent4</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+</resources>
