@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="myactivity.cp16.com.sotral_way">
 
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,9 +13,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".TestPush"></activity>
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBGiXJKMGWuu6SWkQCzmIU5xKMNtt2CJnI"/>
+            android:value="AIzaSyBGiXJKMGWuu6SWkQCzmIU5xKMNtt2CJnI" />
+
         <activity
             android:name=".Views.HomeActivity"
             android:label="@string/labelMain"
@@ -21,25 +28,13 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-
         </activity>
-        <activity android:name=".Views.LoginMainActivity" >
-
-
-        </activity>
-        <activity android:name=".Views.LoggedOnActivity" >
-
-        </activity>
+        <activity android:name=".Views.LoginMainActivity"></activity>
+        <activity android:name=".Views.LoggedOnActivity"></activity>
         <activity
             android:name=".Views.Admin.AdminTabActivity"
             android:label="@string/title_activity_admin_tab"
-            android:theme="@style/AppTheme">
-
-        </activity>
+            android:theme="@style/AppTheme"></activity>
     </application>
-    <uses-feature
-        android:glEsVersion="0x00020000"
-        android:required="true"/>
 
 </manifest>
