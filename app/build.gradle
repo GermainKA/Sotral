@@ -34,4 +34,5 @@ dependencies {
     implementation('com.mikepenz:materialdrawer:5.9.5@aar') {
         transitive = true
         exclude group: 'com.android.support'}
+    implementation 'com.google.android.gms:play-services:12.0.1'
 }

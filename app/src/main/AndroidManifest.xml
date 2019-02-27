@@ -9,6 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBGiXJKMGWuu6SWkQCzmIU5xKMNtt2CJnI"/>
         <activity
             android:name=".Views.HomeActivity"
             android:label="@string/labelMain"
@@ -35,5 +38,8 @@
 
         </activity>
     </application>
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
 
 </manifest>
