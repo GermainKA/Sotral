@@ -62,11 +62,14 @@
     <string name="info_payement">Info payement</string>
     <string name="str_a_propos_de_cp16">A propos de CP16</string>
     <string name="str_se_connecter">Se Connecter</string>
+    <string name="str_s_identifier">S\'Identifier</string>
     <string name="str_creer_un_nouveau_compte">Creer un nouveau compte</string>
-    <string name="str_s_enregistrer">S\'Enregistrer</string>
+    <string name="str_s_inscrire">S\'Inscrire</string>
     <string name="str_creationConpte">Creer un compte</string>
     <string name="str_nom">Nom</string>
     <string name="str_mot_de_passe">Mot De Passe</string>
     <string name="str_r_p_ter_le_mot_de_passe">Répéter Le Mot De Passe</string>
     <string name="str_mot_de_passe_oubli">Mot de passe oublié ?</string>
+    <string name="vous_n_avez_pas_encore_de_compte">Vous n\'avez pas encore de compte?</string>
+    <string name="vous_avez_d_j_un_compte">Vous avez déjà un compte ?</string>
 </resources>

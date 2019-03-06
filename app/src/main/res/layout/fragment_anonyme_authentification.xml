@@ -5,58 +5,103 @@
     android:orientation="vertical"
     tools:context="myactivity.cp16.com.sotral_way.Views.Autre.AnonymeAuthentification">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="141dp">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:gravity="center"
-            android:text="@string/anonyme"
-            android:textColor="#333333"
-            android:textSize="30sp"/>
-    </RelativeLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/dim_wid_frag_icon"
+        android:layout_height="@dimen/dim_heig_frag_icon"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="2dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_account_anonym_24dp" />
+
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_gravity="center">
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/anonyme"
+        android:textColor="@color/colorAccent4"
+        android:textSize="@dimen/dim_icon_legen" />
+
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorAccent4"
+            android:outlineAmbientShadowColor="@color/colorAccent4"
+            android:theme="@style/InputColor1"
+            >
 
             <android.support.design.widget.TextInputEditText
                 android:id="@+id/idNumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:layout_marginTop="40dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_phone_blanc_24dp"
+                android:drawablePadding="12dp"
+                android:textColor="@color/colorAccent4"
+                android:outlineAmbientShadowColor="@color/colorAccent4"
                 android:hint="@string/num_ro_de_t_l_phone"
                 android:inputType="number"
                 android:maxLines="1"/>
 
         </android.support.design.widget.TextInputLayout>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="6dp"
+            android:text="Souvenir de moi"
+            android:textColor="#fff" />
 
         <Button
+            style="@style/Base.TextAppearance.AppCompat.Body1"
             android:layout_width="match_parent"
             android:layout_height="@dimen/n5_bnt_height"
-            android:id="@+id/idBtnLoginAnony"
             android:layout_gravity="center"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/backgroud_bnt_login"
-            android:clickable="true"
             android:text="@string/str_se_connecter"
+            android:id="@+id/idBtnLoginAnony"
+            android:clickable="true"
             android:textColor="#fff" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vous_n_avez_pas_encore_de_compte"
+                android:textColor="@color/colorAccent4"
+                android:layout_marginTop="4dp"
+                android:textSize="15dp"/>
+            <TextView
+                android:id="@+id/idGoToRecordAnony"
+                android:layout_width="@dimen/dim_goto_width"
+                android:layout_height="wrap_content"
+                android:text="S'inscrire"
+                android:textColor="@color/colorAccent4"
+                android:layout_marginTop="4dp"
+                android:clickable="true"
+                android:textSize="15dp"/>
+
+
+        </LinearLayout>
+
 
     </LinearLayout>
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/idBtnfloattoRecordAnonyme"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:src="@android:drawable/ic_input_add"
-        android:layout_gravity="right|bottom"/>
 
 </FrameLayout>

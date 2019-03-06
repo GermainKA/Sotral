@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@android:color/transparent"
     android:orientation="vertical"
-    android:paddingHorizontal="5dp"
+    android:paddingHorizontal="1dp"
     tools:context="myactivity.cp16.com.sotral_way.Views.Etudiant.EtudiantAuthentification">
 
     <ScrollView
@@ -15,6 +15,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:paddingBottom="10dp"
             android:orientation="vertical">
 
             <ImageView
@@ -68,10 +69,14 @@
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorAccent4"
+                android:outlineAmbientShadowColor="@color/colorAccent4"
+                android:theme="@style/InputColor1">
 
                 <android.support.design.widget.TextInputEditText
                     android:id="@+id/idPasswordEtd"
+                    android:focusable="true"
                     android:focusableInTouchMode="true"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -82,7 +87,8 @@
                     android:hint="@string/mot_de_passe"
                     android:inputType="textPassword"
                     android:maxLines="1"
-                    android:textColor="#ffffff" />
+                    android:textColor="@color/colorAccent4"
+                    android:outlineAmbientShadowColor="@color/colorAccent4" />
             </android.support.design.widget.TextInputLayout>
 
             <View
@@ -115,27 +121,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="16dp">
+                android:layout_marginVertical="5dp"
+                android:padding="2dp">
 
                 <TextView
-                    android:id="@+id/btnRecordEtudiant"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/str_creer_un_nouveau_compte"
+                    android:text="@string/vous_n_avez_pas_encore_de_compte"
                     android:textColor="@color/colorAccent4"
                     android:layout_marginTop="4dp"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:id="@+id/btnGotoRecordEtudiant"
+                    android:layout_width="@dimen/dim_goto_width"
+                    android:layout_height="wrap_content"
+                    android:text="S'inscrire"
+                    android:textColor="@color/colorAccent1"
+                    android:layout_marginTop="4dp"
+                    android:paddingHorizontal="2dp"
                     android:clickable="true"
                     android:textSize="15dp"/>
 
-                <!--android.support.design.widget.FloatingActionButton
-                    android:id="@+id/btnRecordEtudiant"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:padding="10dp"
 
-
-                    android:src="@android:drawable/ic_input_add" /-->
             </LinearLayout>
             <TextView
                 android:layout_width="match_parent"

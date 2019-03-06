@@ -11,4 +11,5 @@
     <dimen name="dim_heig_frag_icon">110dp</dimen>
     <dimen name="dim_icon_legen">20sp</dimen>
     <dimen name="dim_slide_pager">250dp</dimen>
+    <dimen name="dim_goto_width">75dp</dimen>
 </resources>

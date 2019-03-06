@@ -13,6 +13,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import myactivity.cp16.com.sotral_way.R;
 import myactivity.cp16.com.sotral_way.Views.Admin.AdminRecord;
@@ -39,6 +41,16 @@ public class HomeActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_viewha);
         navigationView.setNavigationItemSelectedListener(this);
+
+        Button connexion =(Button) findViewById(R.id.idhomelogin);
+
+        connexion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout_ha);
+                drawer.openDrawer(GravityCompat.START);
+            }
+        });
 
         MainFragment fragment = new MainFragment();
             FragmentManager fragmentManager = getSupportFragmentManager();
@@ -88,15 +100,28 @@ public class HomeActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_etudiants) {
+            Intent loginIntent = new Intent(HomeActivity.this,
+                    LoginMainActivity.class);
+            loginIntent.putExtra(nav_choix,R.id.nav_etudiants);
+            startActivity(loginIntent);
+
         } else if (id == R.id.nav_administration) {
+            Intent loginIntent = new Intent(HomeActivity.this,
+                    LoginMainActivity.class);
+            loginIntent.putExtra(nav_choix,R.id.nav_administration);
+            startActivity(loginIntent);
 
         } else if (id == R.id.nav_Autres) {
+            Intent loginIntent = new Intent(HomeActivity.this,
+                    LoginMainActivity.class);
+            loginIntent.putExtra(nav_choix,R.id.nav_Autres);
+            startActivity(loginIntent);
 
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_exit) {
-            exit(0);
 
+            exit(0);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout_ha);

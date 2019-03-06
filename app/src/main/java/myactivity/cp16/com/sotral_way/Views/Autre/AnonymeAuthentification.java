@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import myactivity.cp16.com.sotral_way.R;
@@ -21,7 +22,7 @@ import static myactivity.cp16.com.sotral_way.Views.LoginMainActivity.loggedUSER;
 
 public class AnonymeAuthentification extends Fragment {
 
-    FloatingActionButton floatBtntoRecordAnonyme;
+    TextView goToAnoyRecord;
     Button bntLoginAnonyme;
 
     @Override
@@ -30,7 +31,7 @@ public class AnonymeAuthentification extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_anonyme_authentification, container, false);
 
-        floatBtntoRecordAnonyme = (FloatingActionButton)view.findViewById(R.id.idBtnfloattoRecordAnonyme);
+        goToAnoyRecord = (TextView) view.findViewById(R.id.idGoToRecordAnony);
         bntLoginAnonyme =(Button)view.findViewById(R.id.idBtnLoginAnony);
 
 
@@ -44,7 +45,7 @@ public class AnonymeAuthentification extends Fragment {
 
         bntLoginAnonyme.setOnClickListener(bntLoginListener);
 
-        floatBtntoRecordAnonyme.setOnClickListener(new View.OnClickListener() {
+        goToAnoyRecord.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AnonymeRecord fragment = new AnonymeRecord();
@@ -54,7 +55,7 @@ public class AnonymeAuthentification extends Fragment {
                     fragmentTransaction.replace(R.id.fragmentcontenairloi, fragment);
                     fragmentTransaction.commit();
                     Toast.makeText(getContext(), "Admin action", Toast.LENGTH_LONG).show();
-                }
+                    }
             }
         });
 
@@ -62,6 +63,11 @@ public class AnonymeAuthentification extends Fragment {
     }
 
     public void bntLoginAnonyOnClick(){
+        Intent intent = new Intent(getActivity(), LoggedOnActivity.class);
+        intent.putExtra(loggedUSER,R.id.idBtnLoginAnony);
+        startActivity(intent);
+    }
+    public void goToAnoyreOnClick(){
         Intent intent = new Intent(getActivity(), LoggedOnActivity.class);
         intent.putExtra(loggedUSER,R.id.idBtnLoginAnony);
         startActivity(intent);
