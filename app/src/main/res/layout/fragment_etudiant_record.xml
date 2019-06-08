@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/transparent"
+    android:background="@color/colorBackLogin"
     android:orientation="vertical"
     tools:context="myactivity.cp16.com.sotral_way.Views.Etudiant.EtudiantRecord">
 
@@ -12,157 +12,207 @@
         >
 
 
-            <LinearLayout
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dim_wid_frag_icon"
+                android:layout_height="@dimen/dim_heig_frag_icon"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="2dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_school_black_24dp" />
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:paddingBottom="20dp"
-                android:orientation="vertical">
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_horizontal"
+                android:text="@string/etudiant"
+                android:textColor="@color/colorAccent4"
+                android:textSize="@dimen/dim_icon_legen" />
 
-                <ImageView
-                    android:layout_width="@dimen/dim_wid_frag_icon"
-                    android:layout_height="@dimen/dim_heig_frag_icon"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="3dp"
-                    android:layout_marginBottom="2dp"
-                    android:padding="10dp"
-                    android:src="@drawable/ic_school_black_24dp" />
-                <TextView
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorAccent4"
+                android:outlineAmbientShadowColor="@color/colorAccent4"
+                android:theme="@style/InputColor1"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/idEditEtuName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:layout_marginBottom="20dp"
-                    android:gravity="center_horizontal"
-                    android:text="@string/etudiant"
-                    android:textColor="@color/colorAccent4"
-                    android:textSize="@dimen/dim_icon_legen" />
+                    android:focusableInTouchMode="true"
+                    android:layout_marginTop="40dp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/str_nom"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:textColor="@color/regist_texcolor"
+                    android:outlineAmbientShadowColor="@color/colorAccent4"/>
 
+            </android.support.design.widget.TextInputLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/ColorformLine" />
 
-                <android.support.design.widget.TextInputLayout
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorAccent4"
+                android:outlineAmbientShadowColor="@color/colorAccent4"
+                android:theme="@style/InputColor1"
+                android:layout_marginTop="10dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/idEditEtulastName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColorHint="@color/colorAccent4"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/strPrenom"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/regist_texcolor"
+                    android:focusableInTouchMode="true"
+                    android:background="@android:color/transparent"
+                    android:outlineAmbientShadowColor="@color/colorAccent4"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/ColorformLine" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorAccent4"
+                android:outlineAmbientShadowColor="@color/colorAccent4"
+                android:theme="@style/InputColor1"
+                android:layout_marginTop="10dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/idEditEtuRgterNumCarte"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/strnumcarte"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/regist_texcolor"
                     android:outlineAmbientShadowColor="@color/colorAccent4"
-                    android:theme="@style/InputColor1">
+                    android:focusableInTouchMode="true"
+                    android:background="@android:color/transparent" />
+            </android.support.design.widget.TextInputLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/ColorformLine" />
 
-                    <android.support.design.widget.TextInputEditText
-                        android:id="@+id/etu_name"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:focusableInTouchMode="true"
-                        android:layout_marginTop="40dp"
-                        android:background="@android:color/transparent"
-                        android:hint="@string/str_nom"
-                        android:inputType="textPersonName"
-                        android:maxLines="1"
-                        android:textColor="@color/regist_texcolor" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorAccent4"
+                android:outlineAmbientShadowColor="@color/colorAccent4"
+                android:theme="@style/InputColor1"
+                android:layout_marginTop="10dp">
 
-                </android.support.design.widget.TextInputLayout>
-
-                <android.support.design.widget.TextInputLayout
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/idEditEtuEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColorHint="@color/colorAccent4"
+                    android:layout_marginTop="10dp"
+                    android:hint="Email"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/regist_texcolor"
                     android:outlineAmbientShadowColor="@color/colorAccent4"
-                    android:theme="@style/InputColor1"
-                    android:layout_marginTop="10dp">
+                    android:focusableInTouchMode="true"
+                    android:background="@android:color/transparent" />
+            </android.support.design.widget.TextInputLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/ColorformLine" />
 
-                    <android.support.design.widget.TextInputEditText
-                        android:id="@+id/input4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:hint="Prénom"
-                        android:inputType="text"
-                        android:maxLines="1"
-                        android:textColor="@color/regist_texcolor"/>
-                </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorAccent4"
+                android:outlineAmbientShadowColor="@color/colorAccent4"
+                android:theme="@style/InputColor1"
+                android:layout_marginTop="10dp"
+                >
 
-                <android.support.design.widget.TextInputLayout
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/idEditRgterEtuPass"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColorHint="@color/colorAccent4"
-                    android:outlineAmbientShadowColor="@color/colorAccent4"
-                    android:theme="@style/InputColor1"
-                    android:layout_marginTop="10dp">
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/str_mot_de_passe"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textColor="@color/regist_texcolor"
+                    android:focusableInTouchMode="true"
+                    android:background="@android:color/transparent"
+                    android:outlineAmbientShadowColor="@color/colorAccent4"/>
+            </android.support.design.widget.TextInputLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/ColorformLine" />
 
-                    <android.support.design.widget.TextInputEditText
-                        android:id="@+id/input5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:hint="Numéro de Carte"
-                        android:inputType="text"
-                        android:maxLines="1"
-                        android:textColor="@color/regist_texcolor"/>
-                </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorAccent4"
+                android:outlineAmbientShadowColor="@color/colorAccent4"
+                android:theme="@style/InputColor1"
+                android:layout_marginTop="10dp">
 
-                <android.support.design.widget.TextInputLayout
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/idEditEtuRepass"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColorHint="@color/colorAccent4"
-                    android:outlineAmbientShadowColor="@color/colorAccent4"
-                    android:theme="@style/InputColor1"
-                    android:layout_marginTop="10dp">
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/str_r_p_ter_le_mot_de_passe"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textColor="@color/regist_texcolor"
+                    android:focusableInTouchMode="true"
+                    android:background="@android:color/transparent"
+                    android:outlineAmbientShadowColor="@color/colorAccent4"/>
+            </android.support.design.widget.TextInputLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/ColorformLine" />
 
-                    <android.support.design.widget.TextInputEditText
-                        android:id="@+id/input6"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:hint="Email"
-                        android:inputType="text"
-                        android:maxLines="1"
-                        android:textColor="@color/regist_texcolor"/>
-                </android.support.design.widget.TextInputLayout>
-
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColorHint="@color/colorAccent4"
-                    android:outlineAmbientShadowColor="@color/colorAccent4"
-                    android:theme="@style/InputColor1"
-                    android:layout_marginTop="10dp">
-
-                    <android.support.design.widget.TextInputEditText
-                        android:id="@+id/input7"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:hint="@string/str_mot_de_passe"
-                        android:inputType="textPassword"
-                        android:maxLines="1"
-                        android:textColor="@color/regist_texcolor"/>
-                </android.support.design.widget.TextInputLayout>
-
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColorHint="@color/colorAccent4"
-                    android:outlineAmbientShadowColor="@color/colorAccent4"
-                    android:theme="@style/InputColor1"
-                    android:layout_marginTop="10dp">
-
-                    <android.support.design.widget.TextInputEditText
-                        android:id="@+id/input8"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:hint="@string/str_r_p_ter_le_mot_de_passe"
-                        android:inputType="textPassword"
-                        android:maxLines="1"
-                        android:textColor="@color/regist_texcolor"/>
-                </android.support.design.widget.TextInputLayout>
-
-            </LinearLayout>
+        </LinearLayout>
 
 
 
 
     </ScrollView>
 
+
+    <ProgressBar
+        android:id="@+id/idpBarEtuRegister"
+        android:layout_gravity = "center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
     <Button
-        android:id="@+id/idBntRegisterEtu"
+        android:id="@+id/idBtnEtuRegister"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/n5_bnt_height"
         android:layout_gravity="center"
@@ -185,7 +235,7 @@
             android:textColor="@color/colorAccent4"
             android:textSize="13dp"/>
         <TextView
-            android:id="@+id/btnGoToAuthEtudiant"
+            android:id="@+id/idTextGoToAuthEtudiant"
             android:layout_width="@dimen/dim_goto_width"
             android:layout_height="wrap_content"
             android:text="S'identifier"
@@ -196,4 +246,5 @@
 
 
     </LinearLayout>
+
 </LinearLayout>

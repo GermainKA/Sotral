@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@android:color/transparent"
+    android:background="@android:color/black"
     android:orientation="vertical"
     android:paddingHorizontal="1dp"
     tools:context="myactivity.cp16.com.sotral_way.Views.Etudiant.EtudiantAuthentification">
@@ -46,7 +46,7 @@
                 >
 
                 <android.support.design.widget.TextInputEditText
-                    android:id="@+id/idCartNumber"
+                    android:id="@+id/idEditEtuLginNumCard"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:focusableInTouchMode="true"
@@ -75,7 +75,7 @@
                 android:theme="@style/InputColor1">
 
                 <android.support.design.widget.TextInputEditText
-                    android:id="@+id/idPasswordEtd"
+                    android:id="@+id/idEditEtuLginPassword"
                     android:focusable="true"
                     android:focusableInTouchMode="true"
                     android:layout_width="match_parent"
@@ -105,7 +105,7 @@
                 android:textColor="#fff" />
 
             <Button
-                android:id="@+id/idBtnLoginEtd"
+                android:id="@+id/idBtnEtuLogin"
                 style="@style/Base.TextAppearance.AppCompat.Body1"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/n5_bnt_height"
@@ -132,7 +132,7 @@
                     android:layout_marginTop="4dp"
                     android:textSize="13dp"/>
                 <TextView
-                    android:id="@+id/btnGotoRecordEtudiant"
+                    android:id="@+id/idTextEtuGotoRecord"
                     android:layout_width="@dimen/dim_goto_width"
                     android:layout_height="wrap_content"
                     android:text="S'inscrire"

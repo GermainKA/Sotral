@@ -3,7 +3,6 @@ package myactivity.cp16.com.sotral_way.Views.Autre;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -32,7 +31,7 @@ public class AnonymeAuthentification extends Fragment {
         View view = inflater.inflate(R.layout.fragment_anonyme_authentification, container, false);
 
         goToAnoyRecord = (TextView) view.findViewById(R.id.idGoToRecordAnony);
-        bntLoginAnonyme =(Button)view.findViewById(R.id.idBtnLoginAnony);
+        bntLoginAnonyme =(Button)view.findViewById(R.id.idBtnAnymLogin);
 
 
         View.OnClickListener bntLoginListener= new View.OnClickListener() {
@@ -64,12 +63,12 @@ public class AnonymeAuthentification extends Fragment {
 
     public void bntLoginAnonyOnClick(){
         Intent intent = new Intent(getActivity(), LoggedOnActivity.class);
-        intent.putExtra(loggedUSER,R.id.idBtnLoginAnony);
+        intent.putExtra(loggedUSER,R.id.idBtnAnymLogin);
         startActivity(intent);
     }
     public void goToAnoyreOnClick(){
         Intent intent = new Intent(getActivity(), LoggedOnActivity.class);
-        intent.putExtra(loggedUSER,R.id.idBtnLoginAnony);
+        intent.putExtra(loggedUSER,R.id.idBtnAnymLogin);
         startActivity(intent);
     }
 

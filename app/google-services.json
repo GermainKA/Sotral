@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "264680340844",
+    "firebase_url": "https://sotral.firebaseio.com",
+    "project_id": "sotral",
+    "storage_bucket": "sotral.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264680340844:android:1c0492ec67fc479f",
+        "android_client_info": {
+          "package_name": "myactivity.cp16.com.sotral_way"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "264680340844-obhjoisdse0nforksoc5f63m3ocj8ajo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXw8RcNpumIiAjyav-fq57-3bFYkvWb9U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "264680340844-obhjoisdse0nforksoc5f63m3ocj8ajo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

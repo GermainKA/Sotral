@@ -7,9 +7,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".Views.HomeActivity"
-    android:background="@drawable/sotralfondhome"
-    >
+    tools:context=".Views.HomeActivity">
+    <!--android:background="@drawable/sotralfondhome"-->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

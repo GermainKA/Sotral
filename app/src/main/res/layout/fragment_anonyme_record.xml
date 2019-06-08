@@ -3,7 +3,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="visible"
-        tools:context="myactivity.cp16.com.sotral_way.Views.Autre.AnonymeRecord">
+    android:background="@color/colorBackLogin"
+    tools:context="myactivity.cp16.com.sotral_way.Views.Autre.AnonymeRecord">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -43,14 +44,18 @@
                         android:drawablePadding="12dp"
                         android:textColor="@color/colorAccent4"
                         android:outlineAmbientShadowColor="@color/colorAccent4"
-                        android:id="@+id/input6"
+                        android:id="@+id/idEditAnymNum"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:hint="Numéro De Téléphone"
+                        android:hint="@string/str_numero"
                         android:inputType="number"
                         android:maxLines="1" />
                 </android.support.design.widget.TextInputLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ColorformLine" />
 
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
@@ -61,7 +66,7 @@
                     android:layout_marginTop="10dp">
 
                     <android.support.design.widget.TextInputEditText
-                        android:id="@+id/input7"
+                        android:id="@+id/idEditAnymAdress"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
@@ -76,18 +81,23 @@
                         android:outlineAmbientShadowColor="@color/colorAccent4"
                         />
                 </android.support.design.widget.TextInputLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ColorformLine" />
 
                 <Button
-                    android:id="@+id/idBntRegisterAnony"
+                    android:id="@+id/idBntAnymRegister"
                     android:layout_marginTop="10dp"
-                    android:text="S'Enregistrer"
-                    android:background="@drawable/backgroud_bnt_register"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/n5_bnt_height"
                     android:layout_gravity="center"
-                    android:paddingHorizontal="20dp"
+                    android:background="@drawable/backgroud_bnt_register"
+                    android:paddingHorizontal="5dp"
                     android:paddingVertical="2dp"
-                    android:textSize="25dp"
+                    android:layout_marginVertical="10dp"
+                    android:textSize="15dp"
+                    android:text="@string/str_s_inscrire"
                     android:textColor="#d413ad"
                     />
         <LinearLayout
@@ -104,14 +114,14 @@
                 android:layout_marginTop="4dp"
                 android:textSize="15dp"/>
             <TextView
-                android:id="@+id/btnGoToAuthAnonym"
+                android:id="@+id/idTextAnymGoToAuth"
                 android:layout_width="@dimen/dim_goto_width"
                 android:layout_height="wrap_content"
                 android:text="S'identifier"
-                android:textColor="@color/colorAccent4"
+                android:textColor="@color/colorAccent1"
                 android:layout_marginTop="4dp"
                 android:clickable="true"
-                android:textSize="20dp"/>
+                android:textSize="15dp"/>
 
 
         </LinearLayout>

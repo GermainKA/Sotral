@@ -6,11 +6,13 @@
     <color name="colorBackG2">#00ccc1</color>
     <color name="colorBackG3">#00622e</color>
     <color name="colorBackG4">#81d742</color>
+    <color name="colorBackLogin">#000000</color>
     <color name="colorAccent">#edd415</color>
     <color name="colorAccent1">#a9ed15</color>
     <color name="colorAccent2">#ed8f15</color>
     <color name="colorAccent3">#1527ed</color>
     <color name="colorAccent4">#ffffff</color>
     <color name="regist_texcolor">#ffffff</color>
+    <color name="ColorformLine">#edf1c9</color>
 
 </resources>

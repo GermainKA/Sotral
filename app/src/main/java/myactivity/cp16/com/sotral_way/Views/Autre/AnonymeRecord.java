@@ -23,11 +23,7 @@ import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 
-import java.util.HashMap;
-import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
 
 import myactivity.cp16.com.sotral_way.R;
@@ -42,8 +38,7 @@ public class AnonymeRecord extends Fragment {
     EditText adresse;
 
     FirebaseAuth auth;
-    FirebaseDatabase mdatabase;
-    DatabaseReference mreference;
+
 
 
 
@@ -53,10 +48,10 @@ public class AnonymeRecord extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
          View view =inflater.inflate ( R.layout.fragment_anonyme_record, container, false );
-            bntRegisterAnony =(Button)view.findViewById(R.id.idBntRegisterAnony);
+            bntRegisterAnony =(Button)view.findViewById(R.id.idBntAnymRegister);
 
-        numtelephone= view.findViewById(R.id.input6);
-        adresse = view.findViewById(R.id.input7);
+        numtelephone= view.findViewById(R.id.idEditAnymNum);
+        adresse = view.findViewById(R.id.idEditAnymAdress);
 
             View.OnClickListener bntRegisterListener=new View.OnClickListener() {
                 @Override
