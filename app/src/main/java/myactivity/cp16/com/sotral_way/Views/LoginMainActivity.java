@@ -16,6 +16,8 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.google.firebase.FirebaseApp;
+
 import myactivity.cp16.com.sotral_way.R;
 import myactivity.cp16.com.sotral_way.Views.Admin.AdminAuthentification;
 import myactivity.cp16.com.sotral_way.Views.Autre.AnonymeAuthentification;
@@ -34,6 +36,7 @@ public class LoginMainActivity extends AppCompatActivity
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_drawer);
 

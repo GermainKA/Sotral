@@ -43,16 +43,16 @@ public class HomeActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         Button connexion =(Button) findViewById(R.id.idhomelogin);
-
         connexion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout_ha);
-                drawer.openDrawer(GravityCompat.START);
+                drawer.closeDrawer(GravityCompat.START);
             }
         });
 
-        MainFragment fragment = new MainFragment();
+
+        MapFragment fragment = new MapFragment();
             FragmentManager fragmentManager = getSupportFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.add(R.id.fragcontenairha, fragment);
@@ -60,6 +60,7 @@ public class HomeActivity extends AppCompatActivity
 
 
     }
+
 
     @Override
     public void onBackPressed() {

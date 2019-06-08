@@ -72,4 +72,8 @@
     <string name="str_mot_de_passe_oubli">Mot de passe oublié ?</string>
     <string name="vous_n_avez_pas_encore_de_compte">Vous n\'avez pas encore de compte?</string>
     <string name="vous_avez_d_j_un_compte">Vous avez déjà un compte ?</string>
+    <string name="chauffeur">CHAUFFEUR</string>
+    <string name="strPrenom">Prénom</string>
+    <string name="strnumcarte">Numéro de Carte</string>
+    <string name="str_numero">Numéro De Téléphone</string>
 </resources>

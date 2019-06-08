@@ -3,7 +3,6 @@ package myactivity.cp16.com.sotral_way.Views.Admin;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TextInputEditText;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -12,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.support.v4.app.Fragment;
 
@@ -22,7 +22,7 @@ public class AdminAuthentification extends Fragment {
 
     TextInputEditText txtLineNumber, txtPassword;
     Button btnLoginAdmin;
-    FloatingActionButton floatRegisterBtnAdmin;
+   TextView gotoAdminRecord;
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
@@ -30,15 +30,15 @@ public class AdminAuthentification extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_admin_authentification, container, false);
 
-        txtLineNumber = (TextInputEditText) view.findViewById(R.id.idLineNumbers);
-        txtPassword = (TextInputEditText) view.findViewById(R.id.idPassword);
+        txtLineNumber = (TextInputEditText) view.findViewById(R.id.idEditAdmLineNumbers);
+        txtPassword = (TextInputEditText) view.findViewById(R.id.idEditAdmPassword);
         btnLoginAdmin = (Button) view.findViewById(R.id.idBtnLoginAdm);
 
         btnLoginAdmin.setOnClickListener(btnOnClickListener);
 
-        floatRegisterBtnAdmin = (FloatingActionButton) view.findViewById(R.id.btnRecordAdmin);
+        gotoAdminRecord = (TextView) view.findViewById(R.id.btnGotoRecordAdmin);
 
-        floatRegisterBtnAdmin.setOnClickListener(new View.OnClickListener() {
+        gotoAdminRecord.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AdminRecord fragment = new AdminRecord();

@@ -43,12 +43,12 @@ public class LoggedOnActivity extends AppCompatActivity
 
         Intent i = getIntent();
         Integer loggedId = i.getIntExtra(LoginMainActivity.loggedUSER, 0);
-        if (loggedId == R.id.idBtnLoginEtd) {
+        if (loggedId == R.id.idBtnEtuLogin) {
 
             Toast.makeText(LoggedOnActivity.this,loggedId.toString(),Toast.LENGTH_SHORT).show();
             logonAsEtudiant();
 
-        } else if (loggedId == R.id.idBtnLoginAnony) {
+        } else if (loggedId == R.id.idBtnAnymLogin) {
             logonAsAnonyme();
 
         } else if (loggedId == R.id.idBtnLoginAdm) {

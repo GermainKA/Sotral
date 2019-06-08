@@ -3,7 +3,6 @@ package myactivity.cp16.com.sotral_way.Views.Etudiant;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TextInputEditText;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -31,7 +30,7 @@ public class EtudiantAuthentification extends Fragment {
 
     TextView txtCreateEtudiant;
     Button loginEtudiant;
-    TextInputEditText numcard,email;
+    TextInputEditText numcard,password ;
     private FirebaseAuth auth;
 
     public EtudiantAuthentification() {
@@ -42,24 +41,23 @@ public class EtudiantAuthentification extends Fragment {
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_etudiant_authentification, container, false);
-        numcard= view.findViewById ( R.id.idPasswordEtd );
-        email =view.findViewById ( R.id.idCartNumber );
-        auth = FirebaseAuth.getInstance ();
-        txtCreateEtudiant = (TextView) view.findViewById(R.id.btnGotoRecordEtudiant);
-        loginEtudiant =(Button)view.findViewById(R.id.idBtnLoginEtd);
+        numcard= view.findViewById ( R.id.idEditEtuLginNumCard);
+        password =view.findViewById ( R.id.idEditEtuLginPassword);
+        txtCreateEtudiant = (TextView) view.findViewById(R.id.idTextEtuGotoRecord);
+        loginEtudiant =(Button)view.findViewById(R.id.idBtnEtuLogin);
 
 
 
         View.OnClickListener loginEtuClickListenner = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String memail = email.getText ().toString ();
-                String mnumcard = numcard.getText ().toString ();
-                if(TextUtils.isEmpty ( memail )|| TextUtils.isEmpty (mnumcard )){
+                String memail = numcard.getText ().toString ();
+                String pass = password.getText ().toString ();
+                if(TextUtils.isEmpty ( memail )){
                     Toast.makeText ( getActivity (),"tous les champs doivent etre rensegner ", Toast.LENGTH_SHORT ).show ();
                 }
                 else{
-                    firebasecheck(memail,mnumcard);
+                    firebasecheck(memail,pass);
                 }
 
             }
@@ -96,7 +94,6 @@ public class EtudiantAuthentification extends Fragment {
                             loginEtuClick();
                             getActivity().finish();
                         } else {
-                            //
                             Toast.makeText(getActivity(), "l Authetification a echouer", Toast.LENGTH_SHORT).show();
                         }
                     }
@@ -104,7 +101,7 @@ public class EtudiantAuthentification extends Fragment {
     }
     public void loginEtuClick(){
         Intent intent = new Intent(getActivity(), LoggedOnActivity.class);
-        intent.putExtra(loggedUSER,R.id.idBtnLoginEtd);
+        intent.putExtra(loggedUSER,R.id.idBtnEtuLogin);
         startActivity(intent);
     }
 }
